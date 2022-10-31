@@ -6,10 +6,13 @@ CBIG_preproc_native2mni -down FSL_MNI_2mm -sm 6 -sm_mask ${CBIG_CODE_DIR}/data/t
 Please note that some of these options have been hardcoded into the workflow. Furthermore, the `CBIG_preproc_native2mni.csh` script from the official CBIG repo has been modified by Alex Cohen and Stephan Palm to perform smoothing with two different masks. The modified script this workflow is based on is included in this repo as `CBIG_preproc_native2mni_stephan.csh`.
 
 ## First time installation
+First, clone this repository.
+
 Install snakemake to a new environment:
 ```
 mamba create -c conda-forge -c bioconda -n ncg snakemake
 ```
+Install erisone snakemake profile
 
 
 
